@@ -8,32 +8,36 @@
 
 html,
 body {
+  width: 100%;
   display: flex;
+  font-weight: 300;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  font-weight: 400;
+  color: hsl(0, 6%, 24%);
+  background-color: hsl(0, 0%, 100%);
   font-family: "Josefin Sans", sans-serif;
-  background-color: hsl(0, 100%, 98%);
 }
 
-header {
+#logo {
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 50px;
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 #logo img {
-  width: 200px;
-}
-
-#hero {
-  width: 100%;
-  max-width: 900px;
-  margin-bottom: 30px;
+  width: 100px;
 }
 
 #hero img {
+  width: 415px;
+  max-width: 900px;
+}
+
+#hero #imgbutton {
   width: 100%;
   height: auto;
 }
@@ -51,18 +55,15 @@ main {
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: left;
 }
 
 .span1 {
-  text-align: left;
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 36%, 70%);
 }
 
 h1 {
-  text-align: left;
   font-weight: 600;
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 6%, 24%);
@@ -70,27 +71,42 @@ h1 {
 }
 
 p {
-  text-align: left;
+  font-size: 16px;
   font-weight: 400;
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 36%, 70%);
 }
 
 form {
-  display: flex;
-  flex-direction: row;
-  padding: 1px;
-}
-
-input[type="email"] {
-  flex-grow: 2;
+  /* width: 100%; */
+  height: 40px;
   border: none;
   display: flex;
   flex-direction: row;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  color: hsl(0, 36%, 70%);
+  border: 1px solid hsl(0, 74%, 74%);
+  background: transparent;
+}
+
+input[type="email"] {
   width: 100%;
-  max-width: 500px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  height: 100%;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+  padding-left: 10px;
+  background: transparent;
+}
+
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
 }
 
 button {
@@ -106,9 +122,9 @@ button {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  color: hsl(0, 36%, 70%);
   box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
+  border-radius: 50px;
   display: block;
 }
 
@@ -156,7 +172,7 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 30px;
 }
 
@@ -198,7 +214,7 @@ button:hover {
 }
 
 .attribution a {
-  color: hsl(300, 43%, 22%);
+  color: hsl(0, 36%, 70%);
 }
 
 a:link {
@@ -206,7 +222,7 @@ a:link {
 }
 
 a:visited {
-  color: hsl(300, 43%, 22%);
+  color: hsl(0, 36%, 70%);
   text-decoration: none;
 }
 
