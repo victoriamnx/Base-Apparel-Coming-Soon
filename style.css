@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: hsl(0, 100%, 98%);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#logo img {
+  width: 200px;
+}
+
+#hero {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.span1 {
+  text-align: left;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
+}
+
+h1 {
+  text-align: left;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 6%, 24%);
+  letter-spacing: 15px;
+}
+
+p {
+  text-align: left;
+  font-weight: 400;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  padding: 1px;
+}
+
+input[type="email"] {
+  flex-grow: 2;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 80%, 86%) 0%,
+    hsl(0, 74%, 74%) 51%,
+    hsl(0, 80%, 86%) 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+button img {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 767px) {
+  /* Estilos para telas menores que 768px */
+  #hero img#desktop {
+    display: none;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  /* Estilos para telas maiores ou iguais a 768px */
+  #hero img#mobile {
+    display: none;
+  }
+}
+
+#infos {
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+input[type="email"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+}
+
+button {
+  margin: 0px;
+  padding: 10px 20px;
+  background-color: hsl(0, 80%, 86%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.attribution {
+  padding-top: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(300, 43%, 22%);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(300, 43%, 22%);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
