@@ -9,6 +9,7 @@
 html,
 body {
   width: 100%;
+  height: 100%;
   display: flex;
   font-weight: 300;
   align-items: center;
@@ -32,14 +33,6 @@ body {
   width: 100px;
 }
 
-/* #hero img#mobile {
-  display: none;
-} */
-
-#hero img {
-  width: 415px;
-  max-width: 900px;
-}
 
 #hero #imgbutton {
   width: 100%;
@@ -47,11 +40,18 @@ body {
 }
 
 main {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-around;
+  position:absolute;
+}
+
+section #hero img {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -74,9 +74,11 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 6%, 24%);
   letter-spacing: 15px;
+  text-align: left;
 }
 
 p {
+  text-align: left;
   font-size: 16px;
   margin-bottom: 30px;
   font-weight: 400;
@@ -87,12 +89,9 @@ p {
 #infos {
   text-align: center;
   margin-top: 30px;
-  padding: 0 20px;
 }
 
 form {
-  /* width: 100%; */
-  height: 40px;
   border: none;
   display: flex;
   flex-direction: row;
@@ -119,8 +118,6 @@ input[type="email"] {
   border-radius: 50px;
   padding-left: 10px;
   background: transparent;
-  max-width: 500px;
-  padding: 10px;
 }
 
 ::placeholder {
@@ -154,6 +151,45 @@ button {
 button img {
   width: 10px;
   height: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  position: absolute;
+  margin-bottom: 5px;
+  bottom: 0px;
+}
+
+.attribution {
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(0, 36%, 70%);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: hsl(0, 36%, 70%);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
 
 /* @media (min-width: 900px) {
@@ -299,31 +335,3 @@ button img {
     height: 10px;
   }
 } */
-
-.attribution {
-  padding-top: 10px;
-  font-size: 11px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(0, 36%, 70%);
-}
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  color: hsl(0, 36%, 70%);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
